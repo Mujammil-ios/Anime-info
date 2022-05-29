@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.7%;
+}
+
+body {
+    background-color: rgb(27, 9, 75);
+}
+
+.logo {
+    border: 1px solid;
+    width: fit-content;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    color: aliceblue;
+}
+
+.section-hero {
+    max-width: 140rem;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-hero::before {
+    content: "";
+    width: 339px;
+    position: absolute;
+    height: 3px;
+    background-color: aliceblue;
+    right: 60.7%;
+    top: 11.5%;
+}
+
+.section-hero::after {
+    content: "";
+    width: 339px;
+    position: absolute;
+    height: 3px;
+    background-color: aliceblue;
+    top: 11.5%;
+    left: 60.7%;
+}
+
+.logo::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-color: aliceblue;
+    position: absolute;
+    border-radius: 50%;
+    left: 13%;
+    top: 10%;
+}
+
+.logo::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-color: aliceblue;
+    position: absolute;
+    border-radius: 50%;
+    right: 13%;
+    top: 10%;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border: 1px solid white;
+    width: 60rem;
+    height: 4rem;
+    color: aliceblue;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+
+.section {
+    max-width: 140rem;
+    margin: 10rem 14rem;
+}
+
+.section-model {
+    max-width: 140rem;
+    margin: 10rem 14rem;
+    padding: 6rem;
+}
+
+.grid-four-column {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    gap: 8rem 5rem;
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 8rem 5rem;
+    padding: 6rem;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    color: white;
+}
+
+.image-size {
+    border: 1px solid white;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-size:hover {
+    box-shadow: 0px 30px 30px 0px rgb(132 144 255 / 30%);
+}
+
+
+/* *************************model class css ******************************* */
+
+
+/* width */
+
+ ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+.section-model {
+    max-width: 140rem;
+    margin: 9rem 3rem;
+    position: absolute;
+    background-color: #b30000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 78%;
+    height: 76%;
+    top: 2%;
+    left: 11%;
+    background: #343471;
+    border-radius: 20px;
+    scroll-behavior: smooth;
+    overflow-y: overlay;
+    padding-bottom: 28px;
+}
+
+
+/* Modal Content (image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Caption of Modal Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+/* Add Animation */
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    display: inline-flex;
+    font-size: 2rem;
+    color: #f1f1f1;
+}
+
+label {
+    display: inline-flex;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #f1f1f1;
+    background-color: #343471;
+    gap: 1rem;
+}
+
+.tilteof {
+    text-align: center;
+    font-size: 4rem;
+    color: #f1f1f1;
+}
+
+.model-text {
+    color: yellowgreen;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.imageshot img {
+    width: 100%;
+}
+
+.t::before {
+    content: "";
+    width: 4px;
+    height: 62px;
+    background-color: #f1f1f1;
+    position: inherit;
+    offset-rotate: 23.2%;
+    transform: rotate(36deg);
+    right: 102.5rem;
+    z-index: -1;
+    top: 105%;
+}
+
+.modal {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 1024px) {
+    .grid-four-column {
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        gap: 8rem 5rem;
+    }
+    .section {
+        max-width: 140rem;
+        margin: 10rem 11rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .grid-four-column {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        gap: 8rem 5rem;
+    }
+    .input {
+        background-color: transparent;
+        border: none;
+        border: 1px solid white;
+        width: 50rem;
+        height: 4rem;
+        color: aliceblue;
+        text-align: center;
+        font-size: 2rem;
+        border-radius: 2rem;
+    }
+}
+
+@media only screen and (max-width: 816px) {
+    .grid-four-column {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        gap: 5rem 5rem;
+    }
+    input {
+        background-color: transparent;
+        border: none;
+        border: 1px solid white;
+        width: 46rem;
+        height: 4rem;
+        color: aliceblue;
+        text-align: center;
+        font-size: 2rem;
+        border-radius: 2rem;
+    }
+}
+
+@media only screen and (max-width: 616px) {
+    .grid-four-column {
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        gap: 5rem 5rem;
+    }
+    /* input {
+        background-color: transparent;
+        border: none;
+        border: 1px solid white;
+        width: 46rem;
+        height: 4rem;
+        color: aliceblue;
+        text-align: center;
+        font-size: 2rem;
+        border-radius: 2rem;
+    } */
+    .section-hero {
+        max-width: 152rem;
+        display: flex;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 532px) {
+    .grid-four-column {
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        gap: 5rem 5rem;
+        position: absolute;
+        left: 8%;
+        top: 33%;
+    }
+    /* input {
+        background-color: transparent;
+        border: none;
+        border: 1px solid white;
+        width: 46rem;
+        height: 4rem;
+        color: aliceblue;
+        text-align: center;
+        font-size: 2rem;
+        border-radius: 2rem;
+    } */
+    .section-hero {
+        max-width: 152rem;
+        display: flex;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-hero::before {
+        display: none;
+        content: "";
+        width: 339px;
+        position: absolute;
+        height: 3px;
+        background-color: aliceblue;
+        right: 60.7%;
+        top: 11.5%;
+    }
+    .section-hero::after {
+        display: none;
+        content: "";
+        width: 339px;
+        position: absolute;
+        height: 3px;
+        background-color: aliceblue;
+        top: 11.5%;
+        left: 60.7%;
+    }
+    .section-hero::before {
+        display: none;
+        content: "";
+        width: 339px;
+        position: absolute;
+        height: 3px;
+        background-color: aliceblue;
+        right: 60.7%;
+        top: 11.5%;
+    }
+    .section-hero::after {
+        display: none;
+        content: "";
+        width: 339px;
+        position: absolute;
+        height: 3px;
+        background-color: aliceblue;
+        top: 11.5%;
+        left: 60.7%;
+    }
+    .grid-two-column {
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        gap: 8rem 5rem;
+        padding: 6rem;
+    }
+}
